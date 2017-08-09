@@ -1,0 +1,157 @@
+body{
+    margin-top: 40px;
+}
+
+body,
+input{
+    font-family: 'Saira', sans-serif;
+}
+
+.chat-wrapper{
+    display: flex;
+    height: 100%; 
+    width: 100%; 
+    justify-content: center;
+}
+
+.chat-area{
+    width: 400px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-log{
+    margin: 0;
+    padding: 0;
+    height: 300px;
+    border: 1px solid #eeeeee;
+    box-sizing: border-box;
+    list-style-type: none; 
+    overflow-y: hidden;
+    overflow-wrap: break-word;
+}
+
+.chat-log:hover,
+.chat-log:active,
+.chat-log:focus{
+    overflow-y: scroll;
+}
+
+.chat-message{
+    margin: 5px;
+}
+
+.chat-message .client {
+    color: #4885ed;
+}
+
+.chat-entry{
+    margin-top: 5px;
+}
+
+.users-area{
+    width: 140px; 
+    height: 300px; 
+    margin-top: 5px; 
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+}
+
+.users-list .names{
+    margin: 0;
+    padding: 0;
+    height: 300px;
+    list-style-type: none;
+}
+
+.users-list .name{
+    margin: 5px;
+}
+
+.chat-input{
+    width: 304px;  
+}
+
+
+/* Sign up and sign in page*/
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-form{
+    display: flex; 
+    flex-direction: column; 
+    width: 100%; 
+    height: 300px; 
+}
+.login-form button{
+    font-size: 24px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 24px;
+    width: 150px; 
+}
+.signup-form-button{
+    font-size: 24px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 24px;
+    width: 250px; 
+}
+.signup-form{
+    display: flex; 
+    flex-direction: column; 
+    width: 100%; 
+    height: 100%;
+}
+
+.login{
+    background-color: #eeeeee;
+    padding: 0 30px 30px 30px;
+}
+
+.signup{
+    background-color: #eeeeee;
+    padding: 0 30px 30px 30px;
+}
+
+.login input,
+.signup input{
+    border: none; 
+    border-bottom: 2px solid #4885ed; 
+    background: transparent;
+    font-size: 20px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 20px; 
+    padding-left: 5px;
+    
+}
+
+button{
+    box-sizing: border-box;
+    font-family: 'Saira', sans-serif;
+    border: 2px solid #2caa44;
+    background-color: #3cba54;
+    color: #ffffff;
+}
+
+button:hover{
+    border: 2px solid #2caa44;
+    background-color: #ffffff;
+    color: #3cba54;
+}
+
+.or{
+    font-size: 20px;
+    margin: 0 50px;
+}
+
+h3{
+    margin-bottom: 40px; 
+    text-align: center; 
+}

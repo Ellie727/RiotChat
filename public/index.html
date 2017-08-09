@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html>
+
+<head>
+  <title>RiotChat</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Saira" rel="stylesheet">
+
+  <!---Link to CSS-->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!---Main Tag for Chat App-->
+  <app></app>
+
+  <!---Link to JS-->
+  <script src="js/functions.js"></script>
+
+  <!---Firebase CDN-->
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyD5qtq9HmcLFnHrYLHCL2a_jVP185W9e-M",
+      authDomain: "riotchat-7994c.firebaseapp.com",
+      databaseURL: "https://riotchat-7994c.firebaseio.com",
+      projectId: "riotchat-7994c",
+      storageBucket: "",
+      messagingSenderId: "16976488344"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+  <!--Links to tags and Riot CDN-->
+  <script src="tag/app.tag" type="riot/tag"></script>
+  <script src="tag/chatroom.tag" type="riot/tag"></script>
+  <script src="tag/login.tag" type="riot/tag"></script>
+  <script src="tag/userlist.tag" type="riot/tag"></script>
+  <script src="https://rawgit.com/riot/riot/master/riot%2Bcompiler.min.js"></script>
+
+  <!---Mounting of main tag 'app'-->
+  <script>
+    riot.mount('app', {
+      config: {
+        title: 'RiotChat'
+      }
+    })
+  </script>
+
+</body>
+
+</html>
